@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title 'About Us | ' ~ parent() %}
+{% block body %}
+  <img class="shadow-md my-12 h-24 rounded-full" src="{{ asset('/images/logo.svg') }}" alt="logo" width="200px" height="200px" />
+  <h1 class="text-gray-700">Build with <span class="text-red-500">&hearts;</span> by Duverdier</h1>
+  <p class="mt-5">
+    <a class="text-indigo-400 hover:text-indigo-600 underline" href="{{ path('app_home') }}">Revenir a la page d'accueil</a>
+  </p>
+{% endblock %}
